@@ -20,7 +20,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://aero-sync-self.vercel.app/',
     credentials: true,
   }));
   
@@ -32,14 +32,14 @@ const { dbConnect } = require("./config/db");
 dbConnect();
 
 app.use('/api/auth', auth);
-app.use('/api/users', users);
-app.use('/api/profile', profile);
-app.use('/api/aircrafts', aircrafts);
-app.use('/api/flights', flights);
-app.use('/api/bookings', bookings);
-app.use('/api/bank-accounts', bankAccounts);
-app.use('/api/transactions', transactions);
-app.use('/api/trip', trip);
+// app.use('/api/users', users);
+// app.use('/api/profile', profile);
+// app.use('/api/aircrafts', aircrafts);
+// app.use('/api/flights', flights);
+// app.use('/api/bookings', bookings);
+// app.use('/api/bank-accounts', bankAccounts);
+// app.use('/api/transactions', transactions);
+// app.use('/api/trip', trip);
 
 
 
