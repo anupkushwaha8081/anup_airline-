@@ -20,7 +20,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'https://aero-sync-self.vercel.app/',
+    origin: 'https://aero-sync-self.vercel.app',
     credentials: true,
   }));
   
